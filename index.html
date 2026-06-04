@@ -1,90 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Farhan Zahirsyah | Data Scientist</title>
+<title>Farhan Zahirsyah | Data Scientist & AI Engineer</title>
+
+<meta name="description"
+content="Data Scientist, AI Engineer, Data Engineer specializing in Credit Scoring, Fraud Detection, Agentic AI, OCR, and Production ML Systems.">
+
+<meta property="og:title" content="Farhan Zahirsyah Portfolio">
+<meta property="og:description" content="AI Engineer • Data Scientist • Data Engineer">
+<meta property="og:type" content="website">
 
 <script src="https://cdn.tailwindcss.com"></script>
 
-<script>
-tailwind.config = {
-    darkMode: 'class'
-}
-</script>
+<link rel="stylesheet"
+href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+<link rel="stylesheet" href="css/style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-<style>
-body{
-    font-family: 'Inter', sans-serif;
-}
-.gradient{
-    background: linear-gradient(135deg,#2563eb,#7c3aed);
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
 </head>
 
-<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100">
+<body>
 
-<!-- NAVBAR -->
-<nav class="sticky top-0 z-50 backdrop-blur bg-white/70 dark:bg-slate-950/70 border-b border-slate-200 dark:border-slate-800">
-<div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+<div id="particles"></div>
+<div id="cursor-glow"></div>
 
-<h1 class="font-bold text-xl">
+<nav id="navbar">
+<div class="container">
+
+<h1 class="logo">
 Farhan Zahirsyah
 </h1>
 
-<div class="flex gap-4 items-center">
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
 
-<a href="#projects" class="hover:text-blue-500">Projects</a>
-<a href="#experience" class="hover:text-blue-500">Experience</a>
-<a href="#contact" class="hover:text-blue-500">Contact</a>
-
-<button onclick="toggleDark()"
-class="px-3 py-2 rounded-lg border">
+<button id="themeToggle">
 🌙
 </button>
-
 </div>
+
 </div>
 </nav>
 
-<!-- HERO -->
-<section class="gradient text-white">
+<section class="hero">
 
-<div class="max-w-6xl mx-auto px-6 py-24">
+<div class="container">
 
-<div class="max-w-4xl">
+<div data-aos="fade-up">
 
-<p class="uppercase tracking-widest text-blue-100">
+<h1 class="hero-title">
+Building Production AI Systems
+for Fintech, Credit Scoring,
+Fraud Detection and Agentic AI
+</h1>
+
+<p class="hero-subtitle">
 Data Scientist • AI Engineer • Data Engineer
 </p>
 
-<h1 class="text-5xl md:text-7xl font-black mt-4 leading-tight">
-Building AI Products That Solve Real Business Problems
-</h1>
+<div class="typing">
+<span id="typing"></span>
+</div>
 
-<p class="mt-8 text-xl text-blue-100">
-Specialized in Credit Scoring, Fraud Detection, Agentic AI,
-LLM Systems, OCR Pipelines, Data Engineering,
-and Financial Analytics.
-</p>
-
-<div class="flex flex-wrap gap-4 mt-10">
+<div class="hero-buttons">
 
 <a
-href="mailto:farhanzahirsyah1@gmail.com"
-class="bg-white text-slate-900 px-6 py-3 rounded-xl font-semibold">
-Contact Me
+href="assets/cv.pdf"
+class="btn-primary">
+Download CV
 </a>
 
 <a
 href="https://github.com/fzahirsyah"
 target="_blank"
-class="border border-white px-6 py-3 rounded-xl">
+class="btn-secondary">
 GitHub
 </a>
 
@@ -93,239 +92,175 @@ GitHub
 </div>
 
 </div>
-</section>
-
-<!-- ABOUT -->
-<section class="max-w-6xl mx-auto px-6 py-20">
-
-<h2 class="text-3xl font-bold mb-8">
-About Me
-</h2>
-
-<div class="bg-white dark:bg-slate-900 rounded-2xl p-8 shadow-sm">
-
-<p class="leading-8 text-lg">
-Data Scientist and AI Engineer with experience building
-end-to-end ML and LLM systems in fintech and property technology.
-
-I specialize in fraud detection, credit scoring, OCR,
-agentic AI systems, ETL pipelines, customer intelligence,
-and production-grade AI deployments.
-</p>
-
-</div>
 
 </section>
 
-<!-- SKILLS -->
-<section class="max-w-6xl mx-auto px-6 py-10">
+<section class="stats">
 
-<h2 class="text-3xl font-bold mb-8">
-Technical Skills
-</h2>
+<div class="container grid-stats">
 
-<div class="grid md:grid-cols-3 gap-6">
-
-<div class="bg-white dark:bg-slate-900 rounded-2xl p-6">
-<h3 class="font-bold mb-3">AI / Machine Learning</h3>
-<p>
-Scikit-Learn, XGBoost, Random Forest,
-LLM, Agentic AI
-</p>
+<div class="stat-card">
+<h2 class="counter" data-target="98">0</h2>
+<p>Loan Risk Model Accuracy</p>
 </div>
 
-<div class="bg-white dark:bg-slate-900 rounded-2xl p-6">
-<h3 class="font-bold mb-3">Data Engineering</h3>
-<p>
-Python, SQL, ETL, Redis,
-REST API, NGINX, Linux
-</p>
+<div class="stat-card">
+<h2 class="counter" data-target="3">0</h2>
+<p>Years Experience</p>
 </div>
 
-<div class="bg-white dark:bg-slate-900 rounded-2xl p-6">
-<h3 class="font-bold mb-3">Data & Analytics</h3>
-<p>
-Pandas, NumPy, Tableau,
-Looker Studio
-</p>
+<div class="stat-card">
+<h2 class="counter" data-target="10">0</h2>
+<p>AI Projects</p>
+</div>
+
+<div class="stat-card">
+<h2 class="counter" data-target="2">0</h2>
+<p>Industries</p>
 </div>
 
 </div>
 
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+<section id="about" class="section">
 
-<h2 class="text-3xl font-bold mb-8">
-Featured Projects
-</h2>
+<div class="container">
 
-<div class="grid md:grid-cols-2 gap-6">
+<h2>About Me</h2>
 
-<div class="bg-white dark:bg-slate-900 p-8 rounded-2xl">
+<p class="about-text">
+Data Scientist & AI Engineer with hands-on experience building
+end-to-end machine learning and LLM-based systems in fintech
+and property technology.
 
-<h3 class="font-bold text-xl">
-Fraud Detection System
-</h3>
-
-<p class="mt-4 text-slate-600 dark:text-slate-400">
-Bank statement fraud detection using metadata,
-layout analysis, fonts, margins, and table anomaly detection.
+Specialized in Credit Scoring, Fraud Detection,
+Agentic LLM Architectures, OCR Systems,
+and Production AI Infrastructure.
 </p>
-
-</div>
-
-<div class="bg-white dark:bg-slate-900 p-8 rounded-2xl">
-
-<h3 class="font-bold text-xl">
-Agentic Financial Profiling
-</h3>
-
-<p class="mt-4 text-slate-600 dark:text-slate-400">
-LLM-powered customer profiling system generating
-automated financial insights and behavioral analysis.
-</p>
-
-</div>
-
-<div class="bg-white dark:bg-slate-900 p-8 rounded-2xl">
-
-<h3 class="font-bold text-xl">
-KTP OCR Pipeline
-</h3>
-
-<p class="mt-4 text-slate-600 dark:text-slate-400">
-OCR pipeline using Tesseract and Vision Language Models
-for structured identity extraction.
-</p>
-
-</div>
-
-<div class="bg-white dark:bg-slate-900 p-8 rounded-2xl">
-
-<h3 class="font-bold text-xl">
-Credit Scoring Engine
-</h3>
-
-<p class="mt-4 text-slate-600 dark:text-slate-400">
-Machine learning models for KPR, RTO and rejection routing.
-</p>
-
-</div>
 
 </div>
 
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="max-w-6xl mx-auto px-6 py-20">
+<section id="experience" class="section">
 
-<h2 class="text-3xl font-bold mb-8">
-Experience
-</h2>
+<div class="container">
 
-<div class="space-y-6">
+<h2>Experience</h2>
 
-<div class="bg-white dark:bg-slate-900 p-8 rounded-2xl">
+<div class="timeline">
 
-<h3 class="font-bold text-xl">
-Data Scientist
-</h3>
+<div class="timeline-item" data-aos="fade-right">
 
-<p class="text-blue-500">
-PT Miliki Rumah • 2025 - Present
-</p>
+<h3>Data Scientist</h3>
 
-<ul class="list-disc ml-5 mt-4 space-y-2">
-<li>Fraud Detection Systems</li>
-<li>Agentic AI Development</li>
+<h4>PT Miliki Rumah</h4>
+
+<p>2025 - Present</p>
+
+<ul>
+<li>Agentic LLM Systems</li>
+<li>Fraud Detection</li>
 <li>OCR Pipelines</li>
-<li>ML Deployment via Flask + NGINX</li>
+<li>ML Deployment</li>
 <li>Redis Queue Architecture</li>
 </ul>
 
 </div>
 
-<div class="bg-white dark:bg-slate-900 p-8 rounded-2xl">
+<div class="timeline-item" data-aos="fade-left">
 
-<h3 class="font-bold text-xl">
-Business Data Analyst
-</h3>
+<h3>Business Data Analyst</h3>
 
-<p class="text-blue-500">
-PT Samuel Kripto Indonesia • 2022 - 2025
-</p>
+<h4>PT Samuel Kripto Indonesia</h4>
 
-<ul class="list-disc ml-5 mt-4 space-y-2">
+<p>2022 - 2025</p>
+
+<ul>
 <li>Regulatory Reporting</li>
-<li>SQL Data Pipelines</li>
+<li>SQL Pipelines</li>
 <li>Financial Analytics</li>
-<li>Looker Studio Dashboards</li>
+<li>Looker Dashboards</li>
+</ul>
+
+</div>
+
+<div class="timeline-item" data-aos="fade-right">
+
+<h3>Project Data Scientist</h3>
+
+<h4>ID/X Partners</h4>
+
+<p>2022</p>
+
+<ul>
+<li>98% Loan Risk Model Accuracy</li>
+<li>XGBoost</li>
+<li>Credit Scoring</li>
 </ul>
 
 </div>
 
 </div>
 
-</section>
-
-<!-- EDUCATION -->
-<section class="max-w-6xl mx-auto px-6 py-20">
-
-<h2 class="text-3xl font-bold mb-8">
-Education
-</h2>
-
-<div class="grid md:grid-cols-2 gap-6">
-
-<div class="bg-white dark:bg-slate-900 rounded-2xl p-8">
-<h3 class="font-bold">
-Master of Management
-</h3>
-<p>Widyatama University</p>
-<p>GPA 3.96 / 4.00</p>
-</div>
-
-<div class="bg-white dark:bg-slate-900 rounded-2xl p-8">
-<h3 class="font-bold">
-Industrial Engineering
-</h3>
-<p>Pasundan University</p>
-<p>GPA 3.47 / 4.00</p>
-</div>
-
 </div>
 
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="gradient text-white">
+<section id="projects" class="section">
 
-<div class="max-w-6xl mx-auto px-6 py-20 text-center">
+<div class="container">
 
-<h2 class="text-4xl font-bold">
-Let's Build Something Amazing
-</h2>
+<h2>Featured Projects</h2>
 
-<p class="mt-6 text-xl">
-Available for Data Science, AI Engineering,
-and Data Engineering opportunities.
-</p>
+<div class="projects-grid">
 
-<div class="mt-10 space-y-2">
-
+<div class="project-card">
+<h3>AI-Powered Fraud Detection</h3>
 <p>
-📧 farhanzahirsyah1@gmail.com
+Bank statement fraud detection using PDF metadata,
+layout validation and anomaly detection.
 </p>
+</div>
 
+<div class="project-card">
+<h3>Agentic Financial Profiling</h3>
 <p>
-📱 +62 8777-1010-931
+Multi-agent LLM architecture for customer
+behavior and risk analysis.
 </p>
+</div>
 
+<div class="project-card">
+<h3>KTP OCR System</h3>
 <p>
-LinkedIn: linkedin.com/in/farhanzahirsyah
+Tesseract + Vision Language Models for
+identity extraction.
 </p>
+</div>
+
+<div class="project-card">
+<h3>Customer Routing ML</h3>
+<p>
+Automated KPR / RTO / Reject recommendation.
+</p>
+</div>
+
+<div class="project-card">
+<h3>CRM Platform</h3>
+<p>
+Lead generation, onboarding,
+sales automation and retention.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Developer Profiling</h3>
+<p>
+Property analytics and demographic targeting.
+</p>
+</div>
 
 </div>
 
@@ -333,11 +268,73 @@ LinkedIn: linkedin.com/in/farhanzahirsyah
 
 </section>
 
-<script>
-function toggleDark() {
-document.documentElement.classList.toggle('dark');
-}
-</script>
+<section id="skills" class="section">
+
+<div class="container">
+
+<h2>Tech Stack</h2>
+
+<div class="skills-grid">
+
+<span>Python</span>
+<span>Flask</span>
+<span>PostgreSQL</span>
+<span>Redis</span>
+<span>NGINX</span>
+<span>Vue.js</span>
+<span>XGBoost</span>
+<span>Scikit-Learn</span>
+<span>LLM</span>
+<span>Agentic AI</span>
+<span>Tableau</span>
+<span>Looker Studio</span>
+<span>Linux</span>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="section">
+
+<div class="container center">
+
+<h2>Let's Build Something Amazing</h2>
+
+<p>
+Interested in Data Science, AI Engineering,
+or Machine Learning opportunities?
+</p>
+
+<div class="contact-links">
+
+<a href="mailto:farhanzahirsyah1@gmail.com">
+Email
+</a>
+
+<a
+href="https://www.linkedin.com/in/farhanzahirsyah/"
+target="_blank">
+LinkedIn
+</a>
+
+<a
+href="https://github.com/fzahirsyah"
+target="_blank">
+GitHub
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
